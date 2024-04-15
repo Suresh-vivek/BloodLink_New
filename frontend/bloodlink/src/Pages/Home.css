@@ -1,0 +1,9 @@
+.home-main {
+  display: flex;
+  flex-direction: column;
+}
+.map {
+  height: 92vh;
+  width: 100vw;
+  z-index: -5;
+}

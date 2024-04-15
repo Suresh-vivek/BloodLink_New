@@ -1,0 +1,62 @@
+.sol-outer {
+  width: 100%;
+  height: 723px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.sol-inner {
+  display: flex;
+  flex-direction: column;
+  z-index: 20;
+}
+.cards {
+  display: flex;
+  justify-content: space-around;
+  margin-left: 30px;
+}
+.card-outer {
+  margin-top: 50px;
+  width: 350px;
+  height: 500px;
+  margin-right: 80px;
+  box-shadow: 5px 5px 10px rgba(128, 0, 32, 0.7);
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.5s ease-in-out;
+  /* Apply gradient background */
+  background: linear-gradient(135deg, #810120, #9e1d35);
+}
+.card-outer:hover {
+  transform: scale(1.1);
+}
+.card-image {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+}
+.card-text {
+  font-size: 30px;
+  font-weight: 700;
+  color: #ffffff;
+  margin-top: 20px;
+}
+.card-text1 {
+  width: 80%;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 400;
+  color: rgba(255, 255, 255, 0.7);
+  margin-top: 10px;
+}
+.sol-text {
+  font-size: 50px;
+  font-weight: 700;
+  color: #800020;
+
+  margin-left: 600px;
+}

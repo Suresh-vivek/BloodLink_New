@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Accept Request</title>
+    <style>
+      body {
+        background-color: #f0f0f0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        margin: 0;
+        font-family: Arial, sans-serif; /* Set a generic font family */
+      }
+
+      .container {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 90%; /* Limit container width for smaller screens */
+      }
+
+      h1 {
+        font-size: 24px; /* Increase font size for better readability on small screens */
+      }
+
+      p {
+        font-size: 18px; /* Increase font size for better readability on small screens */
+      }
+
+      form {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      label {
+        margin-bottom: 5px;
+      }
+
+      input[type="text"] {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-sizing: border-box;
+      }
+
+      input[type="submit"] {
+        width: 100%;
+        padding: 10px;
+        background-color: #007bff;
+        color: white;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+
+      /* Media query for smaller screens */
+      @media only screen and (max-width: 600px) {
+        h1 {
+          font-size: 20px; /* Adjust font size for smaller screens */
+        }
+
+        p {
+          font-size: 16px; /* Adjust font size for smaller screens */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>You have accepted the request</h1>
+      <p>Thank you for your willingness to donate blood.</p>
+      <form action="/accept-request/:requestId/accept/submit" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" />
+        <label for="phone">Phone Number:</label>
+        <input type="text" id="phone" name="phone" />
+        <input type="submit" value="Submit" />
+      </form>
+    </div>
+  </body>
+</html>

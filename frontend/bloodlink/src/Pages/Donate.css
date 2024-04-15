@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Sansita:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300;400;500&display=swap");
+
+.donate-bg {
+  background-image: url("../Assets/ChildrenBg.png");
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  filter: blur(6px);
+  -webkit-filter: blur(6px);
+
+  /* Full height */
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-color: #800020;
+  background-blend-mode: multiply;
+}
+
+.back-button {
+  position: absolute;
+  top: 20px;
+  left: 50px;
+  height: 50px;
+  width: 50px;
+}
+.donate-inner {
+  height: 85vh;
+  width: 85vw;
+  display: flex;
+  background: #fff;
+  position: absolute;
+  top: 120px;
+  left: 130px;
+  border-radius: 30px;
+}
+.donate-left-image {
+  height: 80vh;
+  width: 35vw;
+  background-image: url("../assets/blooddonor.png");
+  border-radius: 30px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  margin-left: 20px;
+  margin-top: 20px;
+  transition: background-size 0.5s ease-in-out;
+}
+
+.donate-left-image:hover {
+  background-size: 110% 110%;
+}
+
+.donate-image-blur {
+  height: 80vh;
+  width: 35vw;
+  background-color: rgba(128, 0, 32, 0.6);
+  border-radius: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.donate-image-blur img {
+  height: 200px;
+  width: 200px;
+  margin-right: 15px;
+}
+.donate-text {
+  font-family: "Sansita", sans-serif;
+  font-weight: 700;
+  font-size: 60px;
+  color: #fff;
+  width: 270px;
+  text-align: center;
+}
+
+.donate-right {
+  height: 80vh;
+  width: 50vw;
+
+  margin-top: 45px;
+  margin-left: 50px;
+  display: flex;
+  flex-direction: column;
+}
+
+.donate-quote {
+  font-family: "Sansita swashed", sans-serif;
+  font-style: italic;
+  font-weight: 300;
+  font-size: 25px;
+  text-align: center;
+  margin-top: 20px;
+  color: rgba(128, 0, 32, 0.7);
+  line-height: 35px;
+}
+
+.donate-quote-img {
+  height: 400px;
+  width: 400px;
+  margin-left: 200px;
+  margin-top: 50px;
+}
+
+.donate-right-text {
+  font-family: "Sansita", sans-serif;
+  font-weight: 400;
+  font-size: 45px;
+  color: rgb(128, 0, 32);
+
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 30px;
+}
+
+.donate-right-text1 {
+  font-family: "Sansita", sans-serif;
+  font-weight: 400;
+  font-size: 30px;
+  color: rgba(128, 0, 32, 0.8);
+
+  text-align: center;
+  margin-top: 5px;
+  margin-right: 30px;
+}
